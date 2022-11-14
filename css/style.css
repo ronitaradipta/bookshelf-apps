@@ -1,0 +1,255 @@
+:root {
+  --primary: #404040;
+  --accent: #2563eb;
+  --gray: #f5f5f4;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 20px 0;
+  width: 80%;
+  margin: auto;
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+
+.head_bar__title {
+  flex-basis: 40%;
+}
+
+main {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+
+.left-container {
+  flex-basis: 40%;
+}
+
+.right-container {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.input_section > h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: var(--accent);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: var(--gray);
+  border: 1px solid rgb(122, 122, 122);
+}
+
+.input_section > form > .input > label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: var(--primary);
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.search_section {
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+}
+
+.search_section > form {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+
+.search_section > form > input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(122, 122, 122);
+  display: inline-block;
+  background-color: var(--gray);
+}
+
+.search_section > form > input:focus {
+  background-color: #fff;
+}
+
+.search_section > form > button {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(122, 122, 122);
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+.book_shelf {
+  flex-basis: 50%;
+}
+
+.book_shelf > h2 {
+  color: var(--primary);
+}
+
+.book_shelf > .book_list {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > #incompleteBookshelfList > .book_item {
+  background-color: #ecfccb;
+}
+
+.book_shelf > #completeBookshelfList > .book_item {
+  background-color: #e0f2fe;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.book_shelf > .book_list > .book_item > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #52525b;
+}
+
+.book_shelf > .book_list > .book_item > .action {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+
+.book_shelf > .book_list > .book_item > .action > i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}
+
+.my-actions {
+  margin: 0 2em;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+
+.right-gap {
+  margin-right: auto;
+}
